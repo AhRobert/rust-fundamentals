@@ -3,12 +3,12 @@
 // It is also useful when you want to loop without knowing exactly when to stop
 
 fn main() {
-    let mut x = 1;
-    // continue looping until x > 5
+    let mut x: i64= 1;
+    // continue looping until x > 10
     loop {
         println!("x is {}", x);
-        x += 1;
-        if x > 5 {
+        x += x*2;
+        if x > 50 {
             break;
         }
     }

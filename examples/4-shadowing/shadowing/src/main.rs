@@ -1,9 +1,9 @@
 fn main() {
     let mut height = 190;
-    height = height - 20;
+    height = height - 6;
     let result = if height < 180 {
         "Tall"
-    } else if height > 170 {
+    } else if height > 165 {
         "Average"
     } else {
         "Short"
@@ -16,5 +16,5 @@ fn main() {
     
     // shadowing to a different type
     let health = if height < 180 {true} else {false};
-
+println!("Health: {}", health)
 }
